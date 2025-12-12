@@ -1,0 +1,24 @@
+{
+  "name": "inclusify",
+  "version": "0.1.0",
+  "private": true,
+  "description": "INCLUSIFY - LGBTQ+ Inclusive Language Analyzer",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "lint": "cd frontend && npm run lint",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:lint": "cd frontend && npm run lint"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
