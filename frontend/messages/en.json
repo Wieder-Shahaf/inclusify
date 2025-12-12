@@ -1,0 +1,119 @@
+{
+  "app": {
+    "title": "INCLUSIFY",
+    "tagline": "Detect and improve LGBTQ+ inclusive language in academic writing.",
+    "cta": "Start Analyzing",
+    "glossary": "Glossary",
+    "admin": "Admin",
+    "analyze": "Analyze",
+    "privateMode": "Private mode",
+    "settings": "Settings"
+  },
+  "admin": {
+    "kpi": {
+      "totalAnalyses": "Total Analyses",
+      "issuesFound": "Issues Found",
+      "resolved": "Resolved",
+      "avgScore": "Avg. Score",
+      "since": "last month"
+    },
+    "scoreTrends": "Score Trends",
+    "avgOverTime": "Average inclusivity score over time",
+    "issuesBreakdown": "Issues Breakdown",
+    "shareByCategory": "Share by category",
+    "issuesFoundShort": "Issues found",
+    "topTerms": "Top Terms Flagged",
+    "table": {
+      "term": "Term",
+      "occurrences": "Occurrences",
+      "suggestion": "Suggested Alternative"
+    },
+    "usageByLanguage": "Usage by Language",
+    "runs": "runs",
+    "languages": {
+      "en": "English",
+      "he": "Hebrew"
+    }
+  },
+  "home": {
+    "heroHeadline": "Write with respect, clarity, and inclusion.",
+    "heroSub": "Identify outdated or biased language and get inclusive alternatives and references.",
+    "featuresTitle": "What you can do",
+    "featuresDetailed": {
+      "smartDetection": {
+        "title": "Smart Detection Engine",
+        "desc": "Advanced NLP models detect problematic terms, outdated terminology, and biased assumptions in your text."
+      },
+      "bilingualSupport": {
+        "title": "Bilingual Support",
+        "desc": "Full support for both Hebrew and English, serving local and international academic communities."
+      },
+      "gradedAlerts": {
+        "title": "Graded Alerts",
+        "desc": "Issues classified by severity: outdated, biased, potentially offensive, or factually incorrect."
+      },
+      "exportableReports": {
+        "title": "Exportable Reports",
+        "desc": "Download comprehensive reports with flagged issues and suggestions to share with peers."
+      },
+      "educationalResources": {
+        "title": "Educational Resources",
+        "desc": "Built-in glossary explaining LGBTQ+ concepts and inclusive writing practices."
+      },
+      "privacyFirst": {
+        "title": "Privacy First",
+        "desc": "Private mode available - no text stored without consent. Your data stays yours."
+      }
+    },
+    "features": {
+      "detect": "Detect LGBTQ+ biased or outdated language",
+      "bilingual": "Bilingual: English & Hebrew (RTL supported)",
+      "severity": "Graded alerts with explanations and sources",
+      "report": "Downloadable feedback reports",
+      "privacy": "Private mode—no text stored",
+      "access": "Accessible and mobile-friendly"
+    }
+  },
+  "analyzer": {
+    "placeholder": "Paste your academic text here...",
+    "analyzeBtn": "Analyze Text",
+    "or": "or",
+    "upload": "Upload PDF/DOCX",
+    "results": "Results",
+    "summary": "Summary",
+    "noIssues": "No issues detected in this preview.",
+    "settings": "Sensitivity & Categories"
+  },
+  "severity": {
+    "outdated": "Outdated",
+    "biased": "Biased",
+    "offensive": "Potentially offensive",
+    "incorrect": "Factually incorrect"
+  },
+  "glossary": {
+    "title": "Mini-Glossary",
+    "intro": "Key concepts for inclusive academic writing:",
+    "terms": [
+      {
+        "term": "Gender identity",
+        "desc": "A person's internal sense of their own gender."
+      },
+      {
+        "term": "Sexual orientation",
+        "desc": "Enduring pattern of emotional/romantic attraction."
+      },
+      {
+        "term": "Transgender",
+        "desc": "An umbrella term for people whose gender identity differs from sex assigned at birth."
+      },
+      {
+        "term": "Non-binary",
+        "desc": "A gender identity outside the male/female binary."
+      },
+      {
+        "term": "Inclusive language",
+        "desc": "Language that avoids biases, slang, or expressions that discriminate."
+      }
+    ]
+  }
+}
