@@ -47,6 +47,7 @@ export function mockAnalyze(text: string): {
 } {
   const annotations: Annotation[] = [];
   const results: Result[] = [];
+  const seenPhrases = new Set<string>(); // Track unique phrases to avoid duplicate results
   const counts: Record<Severity, number> = {
     outdated: 0,
     biased: 0,
@@ -58,10 +59,13 @@ export function mockAnalyze(text: string): {
   for (const item of termMap) {
     let idx = 0;
     const needle = item.term.toLowerCase();
+    const phraseKey = item.term.toLowerCase(); // Use lowercase for case-insensitive uniqueness
+    
     while (idx !== -1) {
       idx = lower.indexOf(needle, idx);
       if (idx !== -1) {
         const end = idx + item.term.length;
+        // Always add annotation for every occurrence
         annotations.push({
           start: idx,
           end,
@@ -73,15 +77,21 @@ export function mockAnalyze(text: string): {
             { label: 'APA inclusive language', url: 'https://apastyle.apa.org/style-grammar-guidelines' },
           ],
         });
-        results.push({
-          phrase: item.term,
-          severity: item.severity,
-          explanation: item.explanation,
-          suggestion: item.suggestion,
-          references: [
-            { label: 'APA inclusive language', url: 'https://apastyle.apa.org/style-grammar-guidelines' },
-          ],
-        });
+        
+        // Only add result once per unique phrase
+        if (!seenPhrases.has(phraseKey)) {
+          seenPhrases.add(phraseKey);
+          results.push({
+            phrase: item.term,
+            severity: item.severity,
+            explanation: item.explanation,
+            suggestion: item.suggestion,
+            references: [
+              { label: 'APA inclusive language', url: 'https://apastyle.apa.org/style-grammar-guidelines' },
+            ],
+          });
+        }
+        
         counts[item.severity] += 1;
         idx = end;
       }

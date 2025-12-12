@@ -82,6 +82,10 @@
   .badge {
     @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold;
   }
+
+  .bg-hero-gradient {
+    background-image: var(--background-image-hero-gradient);
+  }
 }
 
 @theme inline {
