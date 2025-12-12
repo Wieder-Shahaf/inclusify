@@ -10,3 +10,4 @@ Monorepo structure:
 
 ## Quick start
 (Will be filled once frontend/backend scaffolding is added.)
+
