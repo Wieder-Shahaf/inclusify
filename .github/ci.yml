@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check repo structure exists
+        run: |
+          test -d frontend
+          test -d backend
+          test -d ml
+          test -d shared
+          test -d infra
+          test -d docs
+
+      - name: Fail if .env committed
+        run: |
+          if git ls-files | grep -E '^\.env$' ; then
+            echo ".env must not be committed"
+            exit 1
+          fi
