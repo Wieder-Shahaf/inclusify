@@ -7,6 +7,7 @@ Monorepo structure:
 - shared/ _ shared schemas/utils
 - infra/ _ deployment + docker
 - docs/ _ requirements, architecture, threat model
+khgkjhgj
 
 ## Quick start
 
